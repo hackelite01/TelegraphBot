@@ -1,0 +1,38 @@
+{
+  "name": "Telegraph Link Generator Bot",
+  "description": "A bot to upload telegram images to telegraph",
+  "repository": "https://github.com/hackelite01/TelegraphBot",
+  "keywords": ["telegraph", "file or media", "link uploader","telegram bot"],
+  "env": {
+     "BOT_TOKEN": {
+      "description": "Your Bot token from @Botfather",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Your API_ID from https://my.telegram.org/apps ",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your API_HASH from https://my.telegram.org/apps",
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "Array to store users who are authorized to use the bot",
+      "value": "997887920"
+    },
+    "TIME_LIMIT": {
+      "description": "For time to next process",
+      "value":"0"
+    },
+    "UPDATE_CHANNEL": {
+      "description": "For Force Subscribe. Paste your Update channel USERNAME (without @)..",
+      "value": "",
+      "required": false
+    }
+   },
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
